@@ -1,0 +1,10 @@
+version: '3.7'
+services: 
+  notebookserver:
+    build: ./server/
+    # image: jupyter/scipy-notebook:ubuntu-18.04
+    volumes: 
+      - $PWD/work:/home/jovyan/work
+    ports: 
+      - 8888:8888
+    container_name: notebookserver
