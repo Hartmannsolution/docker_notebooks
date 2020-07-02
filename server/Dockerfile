@@ -6,4 +6,13 @@ RUN pip install -r requirements.txt
 USER root
 RUN apt-get update \
     && apt-get install -y curl tree
-# COPY . /opt/app # in case we need to copy 
+# return to the jovyan user
+USER $NB_UID
+# WORKDIR $HOME/work/modules
+WORKDIR $HOME
+ENV FLASK_APP="flask_app.py"
+# RUN echo "$PWD"
+# COPY ./flask/flask_app.py flask_app.py
+# RUN ["flask","run","--host=0.0.0.0"]
+# RUN ls
+# RUN ["python","-m","flask_app.py"]
