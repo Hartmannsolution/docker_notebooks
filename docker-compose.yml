@@ -4,7 +4,7 @@ services:
     build: ./server/
     # image: jupyter/scipy-notebook:ubuntu-18.04
     volumes: 
-      - $PWD/work:/home/jovyan/work
+      - $PWD/notebooks:/home/jovyan/work
       - $PWD/server/flask:/home/jovyan/flask
     ports: 
       - "8888:8888"

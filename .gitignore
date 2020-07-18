@@ -3,3 +3,6 @@
 .vscode
 
 **/target/
+**/my_notebooks/
+**/my_modules/
+
