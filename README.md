@@ -12,7 +12,7 @@ From inside the container: `docker exec -it notebookserver bash` run
 To run another flask file put it in the shared volume (in the "flask" folder) and open the container like this with a new env var:
 `docker exec -it -e FLASK_APP="flask/flask_app2.py" notebookserver bash` and
 `flask run --host=0.0.0.0`
-
+`docker exec -it -u 0 notebookserver bash` to run container as root
 
 ### Development with VSCode inside the container context
 - Needed Extensions:
