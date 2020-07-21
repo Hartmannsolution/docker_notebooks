@@ -155,3 +155,4 @@ __pycache__/
 **/*.txt
 **/*.csv
 **/solutions/
+**/api_keys*
