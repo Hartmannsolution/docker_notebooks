@@ -25,7 +25,12 @@ To run another flask file put it in the shared volume (in the "flask" folder) an
 - `ctrl + shift + p` -> Remote-Containers: Open folder in container... -> choose the docker-compose.yml containing folder
   - see: https://code.visualstudio.com/docs/remote/containers#_creating-a-devcontainerjson-file
 - Choose python interpreter (from the python installed in the container) at the status line left side
-- 
+-
+### Mysql server
+- docker-compose starts a mysql8 server instance that can be connected to with db:3306 (or just: db) 
+- the start script in mysql/mysql_script/pythondemo.sql is copied into the contaier and executed at startup
+- user root:root and dev:ax2 (with only grants on database: db)
+- `docker exec -it mysql_notebooks bash` and `mysql -u root -proot`
 ### Flask server
 
 
