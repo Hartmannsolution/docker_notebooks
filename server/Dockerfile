@@ -10,6 +10,11 @@ RUN apt-get update \
 RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.26.0/geckodriver-v0.26.0-linux64.tar.gz \
 && tar -xzf geckodriver-v0.26.0-linux64.tar.gz \
 && rm geckodriver-v0.26.0-linux64.tar.gz
+
+# install pygraphviz to use with networkx drawing graphs
+RUN apt-get install -y python-pygraphviz \
+&& conda install pygraphviz
+
 ENV PATH="${PATH}:/tmp"
 # return to the jovyan user
 USER $NB_UID
