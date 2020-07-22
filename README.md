@@ -4,15 +4,16 @@ source: https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html
 ### Compose
 `docker-compose up --build` DONT use -d flag because you need to get the notebook server token from the output.
 `docker exec -it notebookserver bash`
+`docker exec -it -u 0 notebookserver bash` to run container as root
 
 ### Flask
 This is just for simple dev work. For production ready flask use the flask docker project.
 From inside the container: `docker exec -it notebookserver bash` run
-`flask run --host=0.0.0.0` this will run flask with the env var: flask_app.py as specified in Dockerfile.
+`flask run --host=0.0.0.0` this will run flask with the env var: flask/flask_app.py as specified in Dockerfile.
 To run another flask file put it in the shared volume (in the "flask" folder) and open the container like this with a new env var:
 `docker exec -it -e FLASK_APP="flask/flask_app2.py" notebookserver bash` and
 `flask run --host=0.0.0.0`
-`docker exec -it -u 0 notebookserver bash` to run container as root
+
 
 ### Development with VSCode inside the container context
 - Needed Extensions:

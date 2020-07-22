@@ -15,7 +15,7 @@ ENV PATH="${PATH}:/tmp"
 USER $NB_UID
 # WORKDIR $HOME/work/modules
 WORKDIR $HOME
-ENV FLASK_APP="flask_app.py"
+ENV FLASK_APP="flask/flask_app.py"
 # RUN echo "$PWD"
 # COPY ./flask/flask_app.py flask_app.py
 # RUN ["flask","run","--host=0.0.0.0"]
