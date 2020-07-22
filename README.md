@@ -31,8 +31,13 @@ To run another flask file put it in the shared volume (in the "flask" folder) an
 - the start script in mysql/mysql_script/pythondemo.sql is copied into the contaier and executed at startup
 - user root:root and dev:ax2 (with only grants on database: db)
 - `docker exec -it mysql_notebooks bash` and `mysql -u root -proot`
+- docker restart <container id>` to restart the mysql server
 ### Flask server
 
+
+### clean up
+- `docker rmi $(docker images -f "dangling=true" -q)` to remove all intermediate images to save disk space.
+or use `--force-rm` with docker-compose build to auto remove them right after build is done.
 
 ### If not using compose:
 - If not allready done: `docker pull jupyter/scipy-notebook:ubuntu-18.04`  
