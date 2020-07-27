@@ -156,3 +156,9 @@ __pycache__/
 **/*.csv
 **/solutions/
 **/api_keys*
+
+# handin template
+**/python_handin_template
+
+# remove the build.log
+build.log

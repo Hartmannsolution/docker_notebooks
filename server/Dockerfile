@@ -15,6 +15,12 @@ RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.26.0/geckod
 RUN apt-get install -y python-pygraphviz \
 && conda install pygraphviz
 
+# install opencv
+RUN apt-get update && sudo apt-get upgrade -y \
+&& apt-get install -y python3-opencv \
+&& pip3 install opencv-python
+
+# add tmp to environment variable: path to recognize runnables in there
 ENV PATH="${PATH}:/tmp"
 # return to the jovyan user
 USER $NB_UID
