@@ -11,14 +11,23 @@ RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.26.0/geckod
 && tar -xzf geckodriver-v0.26.0-linux64.tar.gz \
 && rm geckodriver-v0.26.0-linux64.tar.gz
 
-# install pygraphviz to use with networkx drawing graphs
+# install pygraphviz to use with networkx drawing graphs (week 9)
 RUN apt-get install -y python-pygraphviz \
 && conda install pygraphviz
 
-# install opencv
+# install opencv (week 10)
 RUN apt-get update && sudo apt-get upgrade -y \
 && apt-get install -y python3-opencv \
 && pip3 install opencv-python
+
+# install pygraphviz (week 10)
+RUN pip install graphviz
+
+# install tensorflow, keras and theano (used in week 11)
+#RUN pip install theano tensorflow keras and theano
+
+# # add our user to the video group to allow it to use the camera.
+# RUN sudo usermod -a -G video joyvan
 
 # add tmp to environment variable: path to recognize runnables in there
 ENV PATH="${PATH}:/tmp"

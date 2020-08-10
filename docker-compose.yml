@@ -11,7 +11,9 @@ services:
       - "8888:8888"
       - "5000:5000"
     container_name: notebookserver
-
+    # to use the camera from the host machine. Needs testing!!
+    # devices:
+    #   - /dev/video0:/dev/video0
   db:
       # image: mysql:8.0
       build: ./mysql/
