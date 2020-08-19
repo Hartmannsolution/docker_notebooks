@@ -3,6 +3,7 @@ FROM jupyter/scipy-notebook:ubuntu-18.04
 COPY ./requirements.txt /tmp/requirements.txt
 WORKDIR /tmp
 RUN pip install -r requirements.txt
+RUN conda install -c conda-forge jupyter_contrib_nbextensions jupyter_nbextensions_configurator autopep8
 USER root
 RUN apt-get update \
     && apt-get install -y curl tree firefox
@@ -24,7 +25,7 @@ RUN apt-get update && sudo apt-get upgrade -y \
 RUN pip install graphviz
 
 # install tensorflow, keras and theano (used in week 11)
-#RUN pip install theano tensorflow keras and theano
+RUN pip install theano tensorflow keras
 
 # # add our user to the video group to allow it to use the camera.
 # RUN sudo usermod -a -G video joyvan
