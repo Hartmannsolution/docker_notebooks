@@ -3,7 +3,7 @@ FROM jupyter/scipy-notebook:ubuntu-18.04
 COPY ./requirements.txt /tmp/requirements.txt
 WORKDIR /tmp
 RUN pip install -r requirements.txt
-RUN conda install -c conda-forge jupyter_contrib_nbextensions jupyter_nbextensions_configurator autopep8
+# RUN conda install -c conda-forge jupyter_contrib_nbextensions jupyter_nbextensions_configurator autopep8
 USER root
 RUN apt-get update \
     && apt-get install -y curl tree firefox
@@ -37,6 +37,7 @@ USER $NB_UID
 # WORKDIR $HOME/work/modules
 WORKDIR $HOME
 ENV FLASK_APP="flask/flask_app.py"
+ENV JUPYTER_RUNTIME_DIR="/tmp"
 # RUN echo "$PWD"
 # COPY ./flask/flask_app.py flask_app.py
 # RUN ["flask","run","--host=0.0.0.0"]
