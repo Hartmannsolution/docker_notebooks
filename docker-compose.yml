@@ -3,6 +3,7 @@ services:
   notebookserver:
     build: ./server/
     # image: jupyter/scipy-notebook:ubuntu-18.04
+    shm_size: '2gb' # increase /dev/shm shared memory from default 64mb to 2gb (for selenium and geckodriver) 
     volumes: 
       - ./work:/home/jovyan/work
       - ./server/flask:/home/jovyan/flask
@@ -10,3 +11,35 @@ services:
       - "8888:8888"
       - "5000:5000"
     container_name: notebookserver
+    # to use the camera from the host machine. Needs testing!!
+    # devices:
+    #   - /dev/video0:/dev/video0
+  db:
+      # image: mysql:8.0
+      build: ./mysql/
+      container_name: mysql_notebooks
+      restart: always
+      environment:
+        MYSQL_DATABASE: 'db'
+        # So you don't have to use root, but you can if you like
+        MYSQL_USER: 'dev'
+        # You can use whatever password you like
+        MYSQL_PASSWORD: 'ax2'
+        # Password for root access
+        MYSQL_ROOT_PASSWORD: 'root'
+      ports:
+        # <Port exposed> : < MySQL Port running inside container>
+        - '3309:3306'
+      expose:
+        # Opens port 3306 on the container
+        - '3306'
+        # Where our data will be persisted
+      volumes:
+        # - ./mysql/mysql_data:/var/lib/mysql # for data
+        - ./mysql/mysql_scripts:/scripts
+      
+        # overwrite the entrypoint from original dockerfile keeping the functionality and running a mysql start script: pythondemo.sql
+      # command: bash-c "docker-entrypoint.sh mysqld  && mysql -u root -proot < /scripts/pythondemo.sql"
+
+volumes:
+    my-db:

@@ -1,7 +1,18 @@
 Click==7.0
 Flask==1.0.2
+selenium==3.141.0
+openpyxl==3.0.4
+html5lib==1.1
+lxml==4.5.2
+dateparser==0.7.6
+SQLAlchemy==1.3.18
+mysql-connector-python==8.0.20
+# new
+docopt==0.6.2
+
 # itsdangerous==1.1.0
 # Jinja2==2.10.1
 # MarkupSafe==1.1.1
 # uWSGI==2.0.18
 # Werkzeug==0.15.3
+

@@ -1,0 +1,1 @@
+{"messages":["Variable not found","Cannot set an empty value","Invalid expression","Variable not found","Unable to set variable value","Unable to set variable value"],"keys":["error.variableNotFound","error.emptyExpression","error.invalidExpression","error.variableNotFound","error.setVariableDidFail","error.setVariableDidFail"],"filePath":"adapter/variables"}
