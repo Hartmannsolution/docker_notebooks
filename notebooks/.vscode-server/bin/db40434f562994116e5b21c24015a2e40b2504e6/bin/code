@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+#
+# Copyright (c) Microsoft Corporation. All rights reserved.
+#
+ROOT=$(dirname "$(dirname "$0")")
+
+APP_NAME="code"
+VERSION="1.48.0"
+COMMIT="db40434f562994116e5b21c24015a2e40b2504e6"
+EXEC_NAME="code"
+CLI_SCRIPT="$ROOT/out/vs/server/cli.js"
+"$ROOT/node" "$CLI_SCRIPT" "$APP_NAME" "$VERSION" "$COMMIT" "$EXEC_NAME" "$@"
