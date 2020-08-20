@@ -14,6 +14,9 @@ services:
     # to use the camera from the host machine. Needs testing!!
     # devices:
     #   - /dev/video0:/dev/video0
+    #    environment:
+    #   JUPYTER_RUNTIME_DIR: '/tmp'
+
   db:
       # image: mysql:8.0
       build: ./mysql/
