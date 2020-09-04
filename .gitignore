@@ -169,4 +169,4 @@ build.log
 **/.gitconfig
 **/.bash_history
 **/geckodriver.log
-
+**/.conda/
