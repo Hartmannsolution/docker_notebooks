@@ -1,0 +1,115 @@
+# This file created by conda-build 3.17.8
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Mon Apr 22 12:32:54 2019
+# ------------------------------------------------
+
+package:
+    name: conda
+    version: 4.6.14
+source:
+    fn: conda-4.6.14.tar.gz
+    sha256: 6e65665406e29256c96199ed17b767c0a3ab449df60d09d3185dbf9c30bb2d45
+    url: https://github.com/conda/conda/archive/4.6.14.tar.gz
+build:
+    always_include_files:
+        - bin/activate
+        - bin/conda
+        - bin/deactivate
+    number: '0'
+    string: py37_0
+requirements:
+    host:
+        - bzip2 1.0.6 h14c3975_1002
+        - ca-certificates 2019.3.9 hecc5488_0
+        - certifi 2019.3.9 py37_0
+        - libffi 3.2.1 he1b5a44_1006
+        - libgcc-ng 8.2.0 hdf63c60_1
+        - libstdcxx-ng 8.2.0 hdf63c60_1
+        - ncurses 6.1 hf484d3e_1002
+        - openssl 1.1.1b h14c3975_1
+        - pip 19.0.3 py37_0
+        - python 3.7.3 h5b0a415_0
+        - readline 7.0 hf8c457e_1001
+        - ruamel_yaml 0.15.71 py37h14c3975_1000
+        - setuptools 41.0.0 py37_0
+        - sqlite 3.26.0 h67949de_1001
+        - tk 8.6.9 h84994c4_1001
+        - wheel 0.33.1 py37_0
+        - xz 5.2.4 h14c3975_1001
+        - yaml 0.1.7 h14c3975_1001
+        - zlib 1.2.11 h14c3975_1004
+    run:
+        - pycosat >=0.6.3
+        - pyopenssl >=16.2.0
+        - python >=3.7,<3.8.0a0
+        - requests >=2.18.4,<3
+        - ruamel_yaml >=0.11.14,<0.16
+        - setuptools >=31.0.1
+    run_constrained:
+        - conda-build >=3
+        - conda-env >=2.6
+        - cytoolz >=0.8.1
+        - setuptools >=31.0.1
+test:
+    commands:
+        - unset CONDA_SHLVL
+        - eval "$(python -m conda shell.bash hook)"
+        - conda activate base
+        - export PYTHON_MAJOR_VERSION=$(python -c "import sys; print(sys.version_info[0])")
+        - export TEST_PLATFORM=$(python -c "import sys; print('win' if sys.platform.startswith('win')
+            else 'unix')")
+        - export PYTHONHASHSEED=$(python -c "import random as r; print(r.randint(0,4294967296))")
+            && echo "PYTHONHASHSEED=$PYTHONHASHSEED"
+        - env | sort
+        - conda info
+        - conda create -y -p ./built-conda-test-env
+        - conda activate ./built-conda-test-env
+        - echo $CONDA_PREFIX
+        - '[ "$CONDA_PREFIX" = "$PWD/built-conda-test-env" ] || exit 1'
+        - conda deactivate
+    downstreams:
+        - conda-smithy
+    files:
+        - test_conda.sh
+    imports:
+        - conda
+        - conda_env
+    requires:
+        - mock
+        - pexpect
+        - pytest
+        - responses
+    source_files:
+        - conftest.py
+        - setup.cfg
+        - tests
+about:
+    description: 'Conda is an open source package management system and environment
+        management system for installing multiple versions of software packages and
+        their dependencies and switching easily between them. It works on Linux, OS
+        X and Windows, and was created for Python programs but can package and distribute
+        any software.
+
+        '
+    dev_url: https://github.com/conda/conda
+    doc_url: https://conda.io/projects/conda/en/latest/
+    home: https://conda.io
+    license: BSD 3-Clause
+    license_file: LICENSE.txt
+    summary: OS-agnostic, system-level binary package and environment manager.
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - jakirkham
+        - jjhelmus
+        - kalefranz
+        - mbargull
+        - mcg1969
+        - mingwandroid
+        - msarahan
+        - mwcraig
+        - ocefpaf
+        - patricksnape
+        - pelson
+        - scopatz

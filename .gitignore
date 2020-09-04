@@ -166,3 +166,7 @@ build.log
 **/.local/
 **/.jupyter/
 **/.vscode-server/
+**/.gitconfig
+**/.bash_history
+**/geckodriver.log
+

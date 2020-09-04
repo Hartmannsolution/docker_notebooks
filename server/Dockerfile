@@ -27,6 +27,9 @@ RUN pip install graphviz
 # install tensorflow, keras and theano (used in week 11)
 RUN pip install theano tensorflow keras
 
+# use google sheets to read from
+RUN pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+
 # # add our user to the video group to allow it to use the camera.
 # RUN sudo usermod -a -G video joyvan
 
