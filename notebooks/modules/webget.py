@@ -44,3 +44,6 @@ def download(url, to=None):
         req.urlretrieve(url, localfile)
 
     return localfile
+
+if __name__ == '__main__':
+    download('http://www.gutenberg.org/cache/epub/27525/pg27525.txt','bones.txt')
