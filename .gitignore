@@ -154,7 +154,6 @@ aleph.gutenberg.org/
 twitter_combined.txt.gz
 __pycache__/
 **/*.txt
-**/*.csv
 **/solutions/
 **/api_keys*
 
