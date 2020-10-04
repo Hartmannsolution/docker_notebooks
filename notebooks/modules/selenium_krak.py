@@ -11,6 +11,8 @@ from selenium.webdriver.support import expected_conditions as EC
 
 def get_info(name):
     base_url = 'https://www.krak.dk/'
+    profile = webdriver.FirefoxProfile()
+    profile.set_preference("general.useragent.override", "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:81.0) Gecko/20100101 Firefox/81.0")
     
     # headless is needed here because we do not have a GUI version of firefox
     options = Options()
@@ -20,9 +22,23 @@ def get_info(name):
 
     browser.get(base_url)
     browser.implicitly_wait(3)
+    # Cookies popup select
+    try:
+        # cookie_button = browser.find_element_by_id('qc-cmp2-ui') #the whole popup box.
+        cookie_button = browser.find_element_by_css_selector('#qc-cmp2-ui > div.qc-cmp2-footer.qc-cmp2-footer-overlay.qc-cmp2-footer-scrolled > div > button.sc-bwzfXH.fgrRoV')
+        print('Cookie Button', cookie_button)
+        try:
+            cookie_button.click()
+            sleep(3)
+        except Exception as ex:
+            print(ex)
+    except Exception as e:
+        print('BUTTON EXCEPTION',e) 
 
     # search_field = browser.find_element_by_tag_name('input')
     search_field = browser.find_element_by_name('searchQuery')
+    if(search_field):
+        print(search_field)
     search_field.send_keys(name)
     search_field.submit()
 
@@ -70,4 +86,5 @@ def save_to_file(content, out_path='../data/selenium_krak_output.txt'):
 
 if __name__ == '__main__':
     entries = get_info('Møller')
-    save_to_file('\n\n'.join(entries))
+    print(entries)
+    # save_to_file('\n\n'.join(entries))

@@ -634,3 +634,11 @@ JavaScript error: https://www.krak.dk/static/js/Map.bd3e90f7.chunk.js, line 1: N
 *** You are running in headless mode.
 1595355204859	Marionette	INFO	Listening on port 39521
 1595355204939	Marionette	WARN	TLS certificate errors will be ignored for this session
+1601817996223	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile8qwaVv"
+Running Firefox as root in a regular user's session is not supported.  ($HOME is /home/jovyan which is owned by jovyan.)
+1601818133247	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile2nfRwN"
+Running Firefox as root in a regular user's session is not supported.  ($HOME is /home/jovyan which is owned by jovyan.)
+1601818206234	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileMdyI9W"
+Running Firefox as root in a regular user's session is not supported.  ($HOME is /home/jovyan which is owned by jovyan.)
+1601818214030	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilejqB2or"
+Running Firefox as root in a regular user's session is not supported.  ($HOME is /home/jovyan which is owned by jovyan.)
