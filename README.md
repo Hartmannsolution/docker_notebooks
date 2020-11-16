@@ -18,9 +18,9 @@ Preliminary Class schedule is shown below (subject to change)
 |Week 43<br/>|TBD|Database and web service|[](https://docs.google.com/spreadsheets/d/10HYM2KRqslBTQjkcz8B0ooz4TnnXd4n5xxFsSl9saZQ/edit#gid=0)|
 |Week 44<br/>|TBD|Graphs & PageRank Algorithm|[](notebooks/Facebook_exercise.ipynb)|
 |Week 45<br/>|TBD|Feature spaces|[](notebooks/Ugeopgave-10.ipynb)|
-|Week 46<br/>|TBD|Neural Networks|[](notebooks/11-1-Exercise-Perceptrons.ipynb)|
-|Week 47<br/>|TBD|Image Processing with OpenCV||
-|Week 48<br/>|TBD|Movement Detection||
+|Week 46<br/>|TBD|Neural Networks||
+|Week 47<br/>|TBD|Perceptrons|[Ex 12](notebooks/12-2-Exercise-handwritten-numbers.ipynb) or [Ex 12.b](notebooks/12-3-Exercise-Perceptrons.ipynb)|
+|Week 48<br/>|TBD|Neural network||
 |Week 49<br/>|TBD|Exam Project period|None|
 |Week 50<br/>|TBD|Exam Project period|None|
 |Week 51<br/>|TBD|Exam Project period|None|
