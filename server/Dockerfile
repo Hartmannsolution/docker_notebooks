@@ -7,6 +7,7 @@ RUN pip install -r requirements.txt
 USER root
 RUN apt-get update \
     && apt-get install -y curl tree firefox
+
 # install chrome-driver for selenium
 RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.26.0/geckodriver-v0.26.0-linux64.tar.gz \
 && tar -xzf geckodriver-v0.26.0-linux64.tar.gz \
@@ -21,6 +22,9 @@ RUN apt-get update && sudo apt-get upgrade -y \
 && apt-get install -y python3-opencv \
 && pip3 install opencv-python
 
+RUN apt-get update && apt-get install -y python-dev libxml2-dev libxslt1-dev antiword unrtf poppler-utils pstotext tesseract-ocr \
+flac ffmpeg lame libmad0 libsox-fmt-mp3 sox libjpeg-dev swig
+
 # install pygraphviz (week 10)
 RUN pip install graphviz
 
@@ -30,6 +34,8 @@ RUN pip install theano tensorflow keras
 # use google sheets to read from
 RUN pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
 
+# For reading text from pdf, 
+RUN pip install textract
 # # add our user to the video group to allow it to use the camera.
 # RUN sudo usermod -a -G video joyvan
 
