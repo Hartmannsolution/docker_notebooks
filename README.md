@@ -6,7 +6,7 @@ Throughout the semester you must have **10 approved handins** to qualify for exa
 Preliminary Class schedule is shown below (subject to change)
 
 |Week|Topic|Hand-in|
-|--|--|--|--|
+|--|--|--|
 |Week 5<br/>on Zoom |Getting started, Python language features|[Ex 1](notebooks/01-Exercise.ipynb)|
 |Week 6<br/>on Zoom|Whirlwind, Lists, Loops, Cond. Stmts., Functions, Modules|[Ex 2](notebooks/02-Exercise.ipynb)|
 |Week 7<br/>|OO, Exceptions, plotting|[Ex 3](notebooks/03-Exercise.ipynb)|
