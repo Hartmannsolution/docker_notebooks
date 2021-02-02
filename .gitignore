@@ -5,6 +5,8 @@
 **/target/
 **/my_notebooks/
 **/my_modules/
+**/python_handin2
+**/python_handin_template
 
 
 # Created by https://www.gitignore.io/api/python,jupyternotebooks,visualstudiocode
@@ -169,3 +171,6 @@ build.log
 **/.bash_history
 **/geckodriver.log
 **/.conda/
+
+# ignore my sandbox folder
+**/my_notebooks2
