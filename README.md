@@ -26,4 +26,6 @@ Preliminary Class schedule is shown below (subject to change)
 |Week 21<br/>|Exam Project period|None|
 |Week 21<br/>|Handin exam project|Exam project|  
 
+[Sheet for home assignment presentations](https://docs.google.com/spreadsheets/d/15X_gjX7NqGGBka8AZEJvY5G92xsScTm0NkHKx-auqbY/edit?usp=sharing)
+
 
