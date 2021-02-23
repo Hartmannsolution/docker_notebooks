@@ -1,4 +1,4 @@
-import kkdata
+from modules import kkdata
 
 year = 2015
 #print(kkdata.STATISTICS[year][1][20][5100])

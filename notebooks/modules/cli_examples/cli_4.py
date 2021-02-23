@@ -1,5 +1,8 @@
 import argparse
 
+def some_function(arg1):
+    pass
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='A program that downloads a URL and stores it locally')
     parser.add_argument('url', help='The URL to process')
@@ -8,3 +11,5 @@ if __name__ == '__main__':
     args = parser.parse_args()
     print('URL:', args.url)
     print('Destination:', args.destination)
+
+    some_function(args.url)

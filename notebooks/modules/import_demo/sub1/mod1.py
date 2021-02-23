@@ -1,3 +1,5 @@
+# RUN this example with: 'python -m import_demo.sub1.mod1' from root dir containing import_demo
+
 print('__file__:{}\n__name__:{}\n__package__:{}\n'.format(__file__,__name__,str(__package__)))
 
 from import_demo.sub2 import mod2

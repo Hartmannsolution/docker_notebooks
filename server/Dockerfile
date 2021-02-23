@@ -26,13 +26,13 @@ RUN apt-get update && apt-get install -y python-dev libxml2-dev libxslt1-dev ant
 flac ffmpeg lame libmad0 libsox-fmt-mp3 sox libjpeg-dev swig
 
 # install pygraphviz (week 10)
-RUN pip install graphviz
+RUN pip install graphviz folium
 
 # install tensorflow, keras and theano (used in week 11)
 RUN pip install theano tensorflow keras
 
 # use google sheets to read from
-RUN pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+RUN pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib && pip install --upgrade six --user
 
 # For reading text from pdf, 
 RUN pip install textract
