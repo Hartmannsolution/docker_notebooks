@@ -17,6 +17,9 @@ RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.26.0/geckod
 RUN apt-get install -y python-pygraphviz \
 && conda install pygraphviz
 
+# run GUI apps
+RUN apt-get install -y python3.7-tk
+
 # install opencv (week 10)
 RUN apt-get update && sudo apt-get upgrade -y \
 && apt-get install -y python3-opencv \
