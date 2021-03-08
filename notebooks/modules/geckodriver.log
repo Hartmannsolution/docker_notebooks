@@ -642,3 +642,12 @@ Running Firefox as root in a regular user's session is not supported.  ($HOME is
 Running Firefox as root in a regular user's session is not supported.  ($HOME is /home/jovyan which is owned by jovyan.)
 1601818214030	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilejqB2or"
 Running Firefox as root in a regular user's session is not supported.  ($HOME is /home/jovyan which is owned by jovyan.)
+1614758489922	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilemTToKB"
+*** You are running in headless mode.
+[GFX1-]: glxtest: libpci missing
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1614758491072	Marionette	INFO	Listening on port 40883
+1614758491144	Marionette	WARN	TLS certificate errors will be ignored for this session
+1614758491154	Marionette	ERROR	[15] No reply from Marionette:Register
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
