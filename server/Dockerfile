@@ -8,10 +8,26 @@ USER root
 RUN apt-get update \
     && apt-get install -y curl tree firefox
 
-# install chrome-driver for selenium
+# install gecko-driver for selenium
 RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.26.0/geckodriver-v0.26.0-linux64.tar.gz \
 && tar -xzf geckodriver-v0.26.0-linux64.tar.gz \
 && rm geckodriver-v0.26.0-linux64.tar.gz
+
+
+# install geckodriver and firefox
+# RUN GECKODRIVER_VERSION=`curl https://github.com/mozilla/geckodriver/releases/latest | grep -Po 'v[0-9]+.[0-9]+.[0-9]+'` && \
+#     wget https://github.com/mozilla/geckodriver/releases/download/$GECKODRIVER_VERSION/geckodriver-$GECKODRIVER_VERSION-linux64.tar.gz && \
+#     tar -zxf geckodriver-$GECKODRIVER_VERSION-linux64.tar.gz -C /usr/local/bin && \
+#     chmod +x /usr/local/bin/geckodriver && \
+#     rm geckodriver-$GECKODRIVER_VERSION-linux64.tar.gz
+
+# RUN FIREFOX_SETUP=firefox-setup.tar.bz2 && \
+#     apt-get purge firefox -y && \
+#     wget -O $FIREFOX_SETUP "https://download.mozilla.org/?product=firefox-latest&os=linux64" && \
+#     tar xjf $FIREFOX_SETUP -C /opt/ && \
+#     ln -s /opt/firefox/firefox /usr/bin/firefox && \
+#     rm $FIREFOX_SETUP
+
 
 # install pygraphviz to use with networkx drawing graphs (week 9)
 RUN apt-get install -y python-pygraphviz \
@@ -26,7 +42,11 @@ RUN apt-get update && sudo apt-get upgrade -y \
 && pip3 install opencv-python
 
 RUN apt-get update && apt-get install -y python-dev libxml2-dev libxslt1-dev antiword unrtf poppler-utils pstotext tesseract-ocr \
-flac ffmpeg lame libmad0 libsox-fmt-mp3 sox libjpeg-dev swig
+flac ffmpeg lame libmad0 libsox-fmt-mp3 sox libjpeg-dev swig 
+# xvfb # add this for using with xserver (experiments so far has been fruitless)
+
+# For running selenium with xserver
+#RUN pip install pyvirtualdisplay
 
 # install pygraphviz (week 10)
 RUN pip install graphviz folium
@@ -39,6 +59,9 @@ RUN pip install --upgrade google-api-python-client google-auth-httplib2 google-a
 
 # For reading text from pdf, 
 RUN pip install textract
+
+# For testing
+RUN pip install pytest
 # # add our user to the video group to allow it to use the camera.
 # RUN sudo usermod -a -G video joyvan
 
