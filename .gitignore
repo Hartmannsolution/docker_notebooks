@@ -7,10 +7,12 @@
 **/my_modules/
 **/python_handin2
 **/python_handin_template
-
-
+**/data/imdb_data.tar.gz
+**/data/aclImdb/
+**/data/glove.6B/
 # Created by https://www.gitignore.io/api/python,jupyternotebooks,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=python,jupyternotebooks,visualstudiocode
+**/.python_history/
 
 ### JupyterNotebooks ###
 # gitignore template for Jupyter Notebooks

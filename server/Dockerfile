@@ -54,6 +54,9 @@ RUN pip install graphviz folium
 # install tensorflow, keras and theano (used in week 11)
 RUN pip install theano tensorflow keras
 
+# install nltk for text processesing
+RUN pip install nltk
+
 # use google sheets to read from
 RUN pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib && pip install --upgrade six --user
 
