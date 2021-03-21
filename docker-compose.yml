@@ -5,7 +5,8 @@ services:
     # image: jupyter/scipy-notebook:ubuntu-18.04
     shm_size: '2gb' # increase /dev/shm shared memory from default 64mb to 2gb (for selenium and geckodriver) 
     environment:  
-      DISPLAY: unix$DISPLAY
+      DISPLAY: unix$DISPLAY # on linux
+      # DISPLAY: host.docker.internal:0 # on windows install with: 'choco install vcxsrv' and configure with tick in "Disable access control". Before an only once in powershell by admin write: Installer choco: Set-ExecutionPolicy Bypass -Scope Process -Force; ` iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
     volumes: 
       - ./notebooks:/home/jovyan
       - ./server/flask:/home/jovyan/flask

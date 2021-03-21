@@ -10,7 +10,7 @@ mysql-connector-python==8.0.20
 # new
 docopt==0.6.2
 wget==3.2
-
+PyInquirer==1.0.3
 
 # itsdangerous==1.1.0
 # Jinja2==2.10.1

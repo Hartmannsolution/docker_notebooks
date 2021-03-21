@@ -33,8 +33,8 @@ RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.26.0/geckod
 RUN apt-get install -y python-pygraphviz \
 && conda install pygraphviz
 
-# run GUI apps
-RUN apt-get install -y python3.7-tk
+# # run GUI apps (week 7 with selenium) (seems to create a jupyter kernel problem that is solved with second command in this line)
+# RUN apt-get install -y python3.7-tk && pip install -U jupyter_console
 
 # install opencv (week 10)
 RUN apt-get update && sudo apt-get upgrade -y \
@@ -61,7 +61,7 @@ RUN pip install nltk
 RUN pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib && pip install --upgrade six --user
 
 # For reading text from pdf, 
-RUN pip install textract
+#RUN pip install textract
 
 # For testing
 RUN pip install pytest
