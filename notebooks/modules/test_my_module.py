@@ -7,4 +7,8 @@ def get_some_names(number):
     return [name for idx, name in enumerate(get_names.get_names(names_list)) if idx < number]
 
 names_10 = get_some_names(10)  
-print(names_10)    
+print(names_10)   
+
+def my_func(name:str,age:int):
+    name+age
+    

@@ -13,7 +13,7 @@ INSERT INTO `pythondemo` (firstname,lastname,startdate,enddate,salary)
 VALUES ('Henny','Petersen','2002-02-02 00:00:00','2002-02-03 23:00:00', 5000)
 ,('Hassan','Hassani','2018-07-07 00:00:00',null, 6000)
 ,('Hanne','Hansen','2002-04-03 00:00:00',null, 7000)
-,('Jesper','Fårekylling','2002-04-03 00:00:00','2018-07-06 22:00:00',4000);
+,('Jesper','Mallerus','2002-04-03 00:00:00','2018-07-06 22:00:00',4000);
 
 CREATE TABLE `ex1` (
   `id` int(11) NOT NULL AUTO_INCREMENT,

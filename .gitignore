@@ -15,6 +15,7 @@
 **/.python_history/
 **/nltk_data/
 **/glove.6B
+**/flask/solution.py
 
 ### JupyterNotebooks ###
 # gitignore template for Jupyter Notebooks
