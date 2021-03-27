@@ -28,8 +28,8 @@ RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.26.0/geckod
 RUN apt-get install -y python-pygraphviz \
 && conda install pygraphviz
 
-# run GUI apps
-RUN apt-get install -y python3.7-tk
+# # run GUI apps (week 7 with selenium) (seems to create a jupyter kernel problem that is solved with second command in this line)
+# RUN apt-get install -y python3.7-tk && pip install -U jupyter_console
 
 # install opencv (week 10)
 RUN apt-get update && sudo apt-get upgrade -y \
@@ -56,19 +56,15 @@ RUN pip install nltk
 RUN pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib && pip install --upgrade six --user
 
 # For reading text from pdf, 
-RUN pip install textract
+#RUN pip install textract
 
 # For testing
 RUN pip install pytest
 # # add our user to the video group to allow it to use the camera.
 # RUN sudo usermod -a -G video joyvan
 
-RUN FIREFOX_SETUP=firefox-setup.tar.bz2 && \
-    apt-get purge firefox -y && \
-    wget -O $FIREFOX_SETUP "https://download.mozilla.org/?product=firefox-latest&os=linux64" && \
-    tar xjf $FIREFOX_SETUP -C /opt/ && \
-    ln -s /opt/firefox/firefox /usr/bin/firefox && \
-    rm $FIREFOX_SETUP
+# solve a jupyter notebook problem with kernel dying.
+RUN pip install -U jupyter_console
 
 # add tmp to environment variable: path to recognize runnables in there
 ENV PATH="${PATH}:/tmp"

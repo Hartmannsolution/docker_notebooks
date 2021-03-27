@@ -722,3 +722,83 @@ JavaScript warning: https://pagead2.googlesyndication.com/bg/WX7IimsAo_RF7a_KStW
 JavaScript warning: https://pagead2.googlesyndication.com/bg/WX7IimsAo_RF7a_KStWqUkPmmU8kKH6_0S6PX737N0g.js line 1 > eval line 1008 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
 * Can't use WebGL in headless mode (https://bugzil.la/1375585).
 console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1615926777897	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileDXHdXq"
+*** You are running in headless mode.
+[GFX1-]: glxtest: libpci missing
+
+(/usr/lib/firefox/firefox:1903): GLib-GObject-CRITICAL **: 20:32:58.535: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:1928): GLib-GObject-CRITICAL **: 20:32:58.607: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1615926779212	Marionette	INFO	Listening on port 40963
+1615926779317	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:2010): GLib-GObject-CRITICAL **: 20:32:59.538: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WX7IimsAo_RF7a_KStWqUkPmmU8kKH6_0S6PX737N0g.js line 1 > eval line 900 > eval line 1 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WX7IimsAo_RF7a_KStWqUkPmmU8kKH6_0S6PX737N0g.js line 1 > eval line 900 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1615927138543	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile8GceZL"
+*** You are running in headless mode.
+[GFX1-]: glxtest: libpci missing
+
+(/usr/lib/firefox/firefox:5387): GLib-GObject-CRITICAL **: 20:38:59.132: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:5415): GLib-GObject-CRITICAL **: 20:38:59.235: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1615927139856	Marionette	INFO	Listening on port 39013
+1615927139968	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:5495): GLib-GObject-CRITICAL **: 20:39:00.136: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WX7IimsAo_RF7a_KStWqUkPmmU8kKH6_0S6PX737N0g.js line 1 > eval line 937 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WX7IimsAo_RF7a_KStWqUkPmmU8kKH6_0S6PX737N0g.js line 1 > eval line 937 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1615927366050	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileMdyzQH"
+*** You are running in headless mode.
+[GFX1-]: glxtest: libpci missing
+
+(/usr/lib/firefox/firefox:7673): GLib-GObject-CRITICAL **: 20:42:46.655: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:7698): GLib-GObject-CRITICAL **: 20:42:46.742: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1615927367356	Marionette	INFO	Listening on port 34417
+1615927367474	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:7780): GLib-GObject-CRITICAL **: 20:42:47.677: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WX7IimsAo_RF7a_KStWqUkPmmU8kKH6_0S6PX737N0g.js line 1 > eval line 426 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WX7IimsAo_RF7a_KStWqUkPmmU8kKH6_0S6PX737N0g.js line 1 > eval line 426 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1615927435279	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilenKp8wl"
+*** You are running in headless mode.
+[GFX1-]: glxtest: libpci missing
+
+(/usr/lib/firefox/firefox:8522): GLib-GObject-CRITICAL **: 20:43:55.911: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:8547): GLib-GObject-CRITICAL **: 20:43:56.006: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1615927436652	Marionette	INFO	Listening on port 35327
+1615927436700	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:8628): GLib-GObject-CRITICAL **: 20:43:56.907: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WX7IimsAo_RF7a_KStWqUkPmmU8kKH6_0S6PX737N0g.js line 1 > eval line 1094 > eval line 1 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WX7IimsAo_RF7a_KStWqUkPmmU8kKH6_0S6PX737N0g.js line 1 > eval line 1094 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1615929551353	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilexl2tYJ"
+*** You are running in headless mode.
+[GFX1-]: glxtest: libpci missing
+
+(/usr/lib/firefox/firefox:28496): GLib-GObject-CRITICAL **: 21:19:11.987: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:28524): GLib-GObject-CRITICAL **: 21:19:12.108: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1615929552784	Marionette	INFO	Listening on port 33727
+1615929552876	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:28605): GLib-GObject-CRITICAL **: 21:19:13.012: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WX7IimsAo_RF7a_KStWqUkPmmU8kKH6_0S6PX737N0g.js line 1 > eval line 4335 > eval line 1 > eval, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://pagead2.googlesyndication.com/bg/WX7IimsAo_RF7a_KStWqUkPmmU8kKH6_0S6PX737N0g.js line 1 > eval line 4335 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.

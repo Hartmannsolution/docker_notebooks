@@ -5,9 +5,10 @@ services:
     # image: jupyter/scipy-notebook:ubuntu-18.04
     shm_size: '2gb' # increase /dev/shm shared memory from default 64mb to 2gb (for selenium and geckodriver) 
     environment:  
-      #- DISPLAY: unix$DISPLAY
-      # - DISPLAY=198.168.8.123
-      - DISPLAY=host.docker.internal:0
+
+      DISPLAY: unix$DISPLAY # on linux
+      # # on windows install XLaunch with: 'choco install vcxsrv' and configure (the installed) XLaunch with check in "Disable access control". Before first time using choco in powershell by admin write: Installer choco: Set-ExecutionPolicy Bypass -Scope Process -Force; ` iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+      # DISPLAY: host.docker.internal:0 
     volumes: 
       - ./notebooks:/home/jovyan
       - ./server/flask:/home/jovyan/flask
@@ -17,6 +18,7 @@ services:
       - "8888:8888"
       - "5000:5000"
     container_name: notebookserver
+    restart: unless-stopped
     # to use the camera from the host machine. Needs testing!!
     # devices:
     #   - /dev/video0:/dev/video0

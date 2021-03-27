@@ -15,10 +15,10 @@
 **/.python_history/
 **/nltk_data/
 **/glove.6B
-
-### JupyterNotebooks ###
-# gitignore template for Jupyter Notebooks
-# website: http://jupyter.org/
+**/flask/solution.py
+# experimental remove file of type if it is directly inside notebooks folder
+# notebooks/*[.txt,.png,.jpg,.csv]
+# !notebooks/**/*[.csv,.txt,.png,.jpg,.csv]
 
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
