@@ -5,11 +5,14 @@ services:
     # image: jupyter/scipy-notebook:ubuntu-18.04
     shm_size: '2gb' # increase /dev/shm shared memory from default 64mb to 2gb (for selenium and geckodriver) 
     environment:  
-      DISPLAY: unix$DISPLAY
+      #- DISPLAY: unix$DISPLAY
+      # - DISPLAY=198.168.8.123
+      - DISPLAY=host.docker.internal:0
     volumes: 
       - ./notebooks:/home/jovyan
       - ./server/flask:/home/jovyan/flask
-      - /tmp/.X11-unix:/tmp/.X11-unix
+      #- /tmp/.X11-unix:/tmp/.X11-unix
+
     ports: 
       - "8888:8888"
       - "5000:5000"

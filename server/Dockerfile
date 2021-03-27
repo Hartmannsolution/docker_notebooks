@@ -21,12 +21,7 @@ RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.26.0/geckod
 #     chmod +x /usr/local/bin/geckodriver && \
 #     rm geckodriver-$GECKODRIVER_VERSION-linux64.tar.gz
 
-# RUN FIREFOX_SETUP=firefox-setup.tar.bz2 && \
-#     apt-get purge firefox -y && \
-#     wget -O $FIREFOX_SETUP "https://download.mozilla.org/?product=firefox-latest&os=linux64" && \
-#     tar xjf $FIREFOX_SETUP -C /opt/ && \
-#     ln -s /opt/firefox/firefox /usr/bin/firefox && \
-#     rm $FIREFOX_SETUP
+
 
 
 # install pygraphviz to use with networkx drawing graphs (week 9)
@@ -67,6 +62,13 @@ RUN pip install textract
 RUN pip install pytest
 # # add our user to the video group to allow it to use the camera.
 # RUN sudo usermod -a -G video joyvan
+
+RUN FIREFOX_SETUP=firefox-setup.tar.bz2 && \
+    apt-get purge firefox -y && \
+    wget -O $FIREFOX_SETUP "https://download.mozilla.org/?product=firefox-latest&os=linux64" && \
+    tar xjf $FIREFOX_SETUP -C /opt/ && \
+    ln -s /opt/firefox/firefox /usr/bin/firefox && \
+    rm $FIREFOX_SETUP
 
 # add tmp to environment variable: path to recognize runnables in there
 ENV PATH="${PATH}:/tmp"
