@@ -68,6 +68,9 @@ RUN pip install pytest
 # # add our user to the video group to allow it to use the camera.
 # RUN sudo usermod -a -G video joyvan
 
+# solve a jupyter notebook problem with kernel dying.
+RUN pip install -U jupyter_console
+
 # add tmp to environment variable: path to recognize runnables in there
 ENV PATH="${PATH}:/tmp"
 # return to the jovyan user
