@@ -16,11 +16,11 @@ Preliminary Class schedule is shown below (subject to change)
 |Week 11<br/>|Webscraping Basics, Regular Expr. & Selenium|[Ex 7](https://docs.google.com/document/d/1ojSiBWwLo4-Rc7763vx6aVEYdNluATOMja9qqk4dodU/edit?usp=sharing)|
 |Week 12<br/>|Database and web service|TBD [](https://docs.google.com/spreadsheets/d/10HYM2KRqslBTQjkcz8B0ooz4TnnXd4n5xxFsSl9saZQ/edit#gid=0)|
 |Week 13<br/>|Påskeferie|
-|Week 14<br/>|Graphs & PageRank Algorithm|TBD [](notebooks/Facebook_exercise.ipynb)|
-|Week 15<br/>|Feature spaces|TBD [](notebooks/Ugeopgave-10.ipynb)|
-|Week 16<br/>|Neural Networks|TBD|
-|Week 17<br/>|Perceptrons|TBD[](notebooks/12-2-Exercise-handwritten-numbers.ipynb) [](notebooks/12-3-Exercise-Perceptrons.ipynb)|
-|Week 18<br/>|Neural network|TBD|
+|Week 14<br/>|Feature spaces|TBD [](notebooks/Ugeopgave-10.ipynb)|
+|Week 15<br/>|Feature engineering and Clustering|TBD|
+|Week 16<br/>|Neural Networks and classification of images|TBD|
+|Week 17<br/>|Working with text|TBD[](notebooks/12-2-Exercise-handwritten-numbers.ipynb) [](notebooks/12-3-Exercise-Perceptrons.ipynb)|
+|Week 18<br/>|Working with images OpenCV|TBD|
 |Week 19<br/>|Exam Project period|None|
 |Week 20<br/>|Exam Project period|None|
 |Week 21<br/>|Exam Project period|None|
