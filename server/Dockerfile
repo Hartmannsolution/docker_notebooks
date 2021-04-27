@@ -66,6 +66,10 @@ RUN pip install pytest
 # solve a jupyter notebook problem with kernel dying.
 RUN pip install -U jupyter_console
 
+# for exercise week 11
+RUN pip install torch
+RUN pip install torchvision
+
 # add tmp to environment variable: path to recognize runnables in there
 ENV PATH="${PATH}:/tmp"
 # return to the jovyan user
