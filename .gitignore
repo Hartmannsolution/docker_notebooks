@@ -16,6 +16,11 @@
 **/nltk_data/
 **/glove.6B
 **/flask/solution.py
+**/.keras/
+**/.mozilla/
+**/.theano/
+**/.python_history
+**/.wget-hsts
 # experimental remove file of type if it is directly inside notebooks folder
 # notebooks/*[.txt,.png,.jpg,.csv]
 # !notebooks/**/*[.csv,.txt,.png,.jpg,.csv]
