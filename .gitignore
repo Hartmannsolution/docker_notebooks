@@ -24,7 +24,7 @@
 # experimental remove file of type if it is directly inside notebooks folder
 # notebooks/*[.txt,.png,.jpg,.csv]
 # !notebooks/**/*[.csv,.txt,.png,.jpg,.csv]
-
+**/glove.6B.zip
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
 
