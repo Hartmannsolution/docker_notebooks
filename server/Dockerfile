@@ -70,6 +70,9 @@ RUN pip install -U jupyter_console
 RUN pip install torch
 RUN pip install torchvision
 
+# for the wordcloud notebook
+#RUN git clone https://github.com/amueller/word_cloud.git && pip install ./word_cloud && rm -fr word_cloud
+
 # add tmp to environment variable: path to recognize runnables in there
 ENV PATH="${PATH}:/tmp"
 # return to the jovyan user
