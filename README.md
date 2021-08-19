@@ -27,5 +27,5 @@ Preliminary Class schedule is shown below (subject to change)
 
 [Presenter sheet](https://docs.google.com/spreadsheets/d/15X_gjX7NqGGBka8AZEJvY5G92xsScTm0NkHKx-auqbY/edit?usp=sharing)
 
-|Week 8<br/>|Database and web service|TBD [](https://docs.google.com/spreadsheets/d/10HYM2KRqslBTQjkcz8B0ooz4TnnXd4n5xxFsSl9saZQ/edit#gid=0)|
+<!--|Week 8<br/>|Database and web service|TBD [](https://docs.google.com/spreadsheets/d/10HYM2KRqslBTQjkcz8B0ooz4TnnXd4n5xxFsSl9saZQ/edit#gid=0)|-->
 
