@@ -25,35 +25,35 @@ RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.26.0/geckod
 
 
 # install pygraphviz to use with networkx drawing graphs (week 9)
-RUN apt-get install -y python-pygraphviz \
-&& conda install pygraphviz
+# RUN apt-get install -y python-pygraphviz \
+# && conda install pygraphviz
 
 # # run GUI apps (week 7 with selenium) (seems to create a jupyter kernel problem that is solved with second command in this line)
 # RUN apt-get install -y python3.7-tk && pip install -U jupyter_console
 
 # install opencv (week 10)
-RUN apt-get update && sudo apt-get upgrade -y \
-&& apt-get install -y python3-opencv \
-&& pip3 install opencv-python
+#RUN apt-get update && sudo apt-get upgrade -y \
+#&& apt-get install -y python3-opencv \
+#&& pip3 install opencv-python
 
-RUN apt-get update && apt-get install -y python-dev libxml2-dev libxslt1-dev antiword unrtf poppler-utils pstotext tesseract-ocr \
-flac ffmpeg lame libmad0 libsox-fmt-mp3 sox libjpeg-dev swig 
+#RUN apt-get update && apt-get install -y python-dev libxml2-dev libxslt1-dev antiword unrtf poppler-utils pstotext tesseract-ocr \
+#flac ffmpeg lame libmad0 libsox-fmt-mp3 sox libjpeg-dev swig 
 # xvfb # add this for using with xserver (experiments so far has been fruitless)
 
 # For running selenium with xserver
 #RUN pip install pyvirtualdisplay
 
 # install pygraphviz (week 10)
-RUN pip install graphviz folium
+#RUN pip install graphviz folium
 
 # install tensorflow, keras and theano (used in week 11)
-RUN pip install theano tensorflow keras
+#RUN pip install theano tensorflow keras
 
 # install nltk for text processesing
-RUN pip install nltk
+#RUN pip install nltk
 
 # use google sheets to read from
-RUN pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib && pip install --upgrade six --user
+#RUN pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib && pip install --upgrade six --user
 
 # For reading text from pdf, 
 #RUN pip install textract
