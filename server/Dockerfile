@@ -32,9 +32,9 @@ RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.26.0/geckod
 # RUN apt-get install -y python3.7-tk && pip install -U jupyter_console
 
 # install opencv (week 10)
-#RUN apt-get update && sudo apt-get upgrade -y \
-#&& apt-get install -y python3-opencv \
-#&& pip3 install opencv-python
+RUN apt-get update && sudo apt-get upgrade -y \
+&& apt-get install -y python3-opencv \
+&& pip3 install opencv-python
 
 #RUN apt-get update && apt-get install -y python-dev libxml2-dev libxslt1-dev antiword unrtf poppler-utils pstotext tesseract-ocr \
 #flac ffmpeg lame libmad0 libsox-fmt-mp3 sox libjpeg-dev swig 

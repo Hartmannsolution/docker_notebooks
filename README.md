@@ -24,6 +24,8 @@ Preliminary Class schedule is shown below (subject to change)
 |14|Week 48<br/>|Exam Project period|None|
 |15|Week 49<br/>|Exam Project period|None|
 |16|Week 50<br/>|Handin exam project on tuesday 14. dec.|Exam project|  
+|16|Week 51<br/>|Exam 21. dec.|Exam list for the groups will be available on wiseflow after hand-in|  
+
 
 [Presenter sheet](https://docs.google.com/spreadsheets/d/15X_gjX7NqGGBka8AZEJvY5G92xsScTm0NkHKx-auqbY/edit?usp=sharing)
 
