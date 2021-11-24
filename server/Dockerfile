@@ -41,25 +41,26 @@ RUN apt-get update && sudo apt-get upgrade -y \
 # xvfb # add this for using with xserver (experiments so far has been fruitless)
 
 # For running selenium with xserver
-#RUN pip install pyvirtualdisplay
+RUN pip install pyvirtualdisplay
 
 # install pygraphviz (week 10)
-#RUN pip install graphviz folium
+RUN pip install graphviz folium
 
 # install tensorflow, keras and theano (used in week 11)
-#RUN pip install theano tensorflow keras
+RUN pip install theano tensorflow keras
 
 # install nltk for text processesing
-#RUN pip install nltk
+RUN pip install nltk
 
 # use google sheets to read from
 #RUN pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib && pip install --upgrade six --user
 
 # For reading text from pdf, 
-#RUN pip install textract
+RUN pip install textract
 
 # For testing
 RUN pip install pytest
+
 # # add our user to the video group to allow it to use the camera.
 # RUN sudo usermod -a -G video joyvan
 
@@ -71,13 +72,13 @@ RUN pip install torch
 RUN pip install torchvision
 
 # for the wordcloud notebook
-#RUN git clone https://github.com/amueller/word_cloud.git && pip install ./word_cloud && rm -fr word_cloud
+RUN git clone https://github.com/amueller/word_cloud.git && pip install ./word_cloud && rm -fr word_cloud
 
 # add tmp to environment variable: path to recognize runnables in there
 ENV PATH="${PATH}:/tmp"
+
 # return to the jovyan user
 USER $NB_UID
-# WORKDIR $HOME/work/modules
 WORKDIR $HOME
 ENV FLASK_APP="flask/flask_app.py"
 ENV JUPYTER_RUNTIME_DIR="/tmp"
