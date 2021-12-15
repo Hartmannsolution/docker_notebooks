@@ -1,9 +1,9 @@
 {
-  "version": "4.0.9",
+  "version": "4.0.30",
   "hide_promotional_message": false,
   "beta_enabled": "No",
   "ignore_all_lsp": false,
-  "creation_time": "2021-11-25T09:10:48.441017200Z",
+  "creation_time": "2021-12-15T07:56:41.413729700Z",
   "guuid": "03bae9751929d09062285ecda5a53123d24730b9a89df5094e33632715d85ecd",
   "semantic_status": {},
   "enable_telemetry": true,
@@ -16,7 +16,6 @@
   "num_of_suggestions": 5,
   "line_suggestions": null,
   "omit_prefix_suggestions": null,
-  "team_ai_local_collection": null,
   "api_key": null,
   "api_base_url": null,
   "binary_update_interval_seconds": null,
@@ -26,7 +25,7 @@
   "enable_power_saving_mode": false,
   "rate_limit_interval_seconds": null,
   "rate_limit_amount": null,
-  "generation": 46,
+  "generation": 48,
   "local_model_size": null,
   "model_hash_override": null,
   "local_indexing": null,
@@ -42,6 +41,6 @@
   "exclude_file_masks": null,
   "inline_suggestions_mode": null,
   "use_specialized_model_if_available": null,
-  "snippets_auto_trigger_enabled": null,
-  "empty_line_suggestions": null
+  "empty_line_suggestions": null,
+  "snippets_enabled": null
 }
