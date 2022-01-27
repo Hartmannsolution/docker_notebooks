@@ -183,3 +183,4 @@ build.log
 
 # ignore my sandbox folder
 **/my_notebooks2
+**/notebooks/.config/
