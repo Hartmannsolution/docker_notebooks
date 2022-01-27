@@ -185,3 +185,7 @@ build.log
 **/my_notebooks2
 **/.config/
 **/notebooks/.config/
+**/DS_Store
+**/.bash_history
+**/.bashrc
+**/.cache
