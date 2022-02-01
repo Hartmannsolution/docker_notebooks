@@ -34,7 +34,7 @@
   "override_beams": null,
   "override_context_length": null,
   "onboarding": null,
-  "has_git_repos": null,
+  "has_git_repos": true,
   "gusr": {
     "dgc": "03bae9751929d09062285ecda5a53123d24730b9a89df5094e33632715d85ecd"
   },
