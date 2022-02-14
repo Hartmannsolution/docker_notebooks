@@ -25,3 +25,5 @@ if __name__ == '__main__':
     # Call me from the CLI for example with:
     # python your_script.py arg_1 [arg_2 ...]
     run(sys.argv[1:])
+    variant = "something"
+    
