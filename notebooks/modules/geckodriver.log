@@ -802,3 +802,13 @@ JavaScript warning: https://pagead2.googlesyndication.com/bg/WX7IimsAo_RF7a_KStW
 JavaScript warning: https://pagead2.googlesyndication.com/bg/WX7IimsAo_RF7a_KStWqUkPmmU8kKH6_0S6PX737N0g.js line 1 > eval line 4335 > eval line 1 > eval, line 1: Failed to create WebGL context: WebGL creation failed: 
 * Can't use WebGL in headless mode (https://bugzil.la/1375585).
 console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1647274373300	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilew4jrr5"
+[GFX1-]: glxtest: libpci missing
+1647274374293	Marionette	INFO	Marionette enabled
+
+(firefox:371): LIBDBUSMENU-GLIB-WARNING **: 16:12:55.164: Unable to get session bus: Failed to execute child process “dbus-launch” (No such file or directory)
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilew4jrr5/search.json.mozlz4", (void 0)))
+1647274377852	Marionette	INFO	Listening on port 41129
+1647274378011	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://julio-cdn.eniro.com/pixel/eniro.pixel.script-2.0.js, line 176: ReferenceError: AWS is not defined
+JavaScript error: https://www.krak.dk/static/js/Map.6cff6813.chunk.js, line 2: TypeError: t is undefined
