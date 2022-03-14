@@ -1,0 +1,6 @@
+--2022-03-08 14:06:28--  https://ast.dk/_namesdb/export/names?format=csv
+Resolving ast.dk (ast.dk)... 77.221.238.185
+Connecting to ast.dk (ast.dk)|77.221.238.185|:443... connected.
+HTTP request sent, awaiting response... 500 Internal Server Error
+2022-03-08 14:06:28 ERROR 500: Internal Server Error.
+
