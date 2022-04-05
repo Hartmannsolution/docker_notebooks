@@ -1,6 +1,7 @@
 version: '3.7'
 services:
   notebookserver:
+    # platform: linux/amd64 # use this for mac m1 chip.
     build: ./server/
     # image: jupyter/scipy-notebook:ubuntu-18.04
     shm_size: '2gb' # increase /dev/shm shared memory from default 64mb to 2gb (for selenium and geckodriver) 

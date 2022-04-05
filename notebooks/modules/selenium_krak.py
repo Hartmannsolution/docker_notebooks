@@ -15,12 +15,12 @@ def get_info(name):
     profile.set_preference("general.useragent.override", "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:81.0) Gecko/20100101 Firefox/81.0")
     
     # headless is needed here because we do not have a GUI version of firefox
-    # options = Options()
-    # options.headless = True
+    options = Options()
+    options.headless = True
     # driver = webdriver.Firefox(options=options, executable_path=r'/tmp/geckodriver')
-    # browser = webdriver.Firefox(options=options)
+    browser = webdriver.Firefox(options=options)
 
-    browser = webdriver.Firefox()
+    # browser = webdriver.Firefox()
     browser.get(base_url)
     browser.implicitly_wait(3)
     
@@ -68,11 +68,9 @@ def get_info(name):
     return entries_str
  
 
-
 def save_to_file(content, out_path='../data/selenium_krak_output.txt'):
     with open(out_path, 'w') as f:
         f.write(content)
-
 
 if __name__ == '__main__':
     entries = get_info('Møller')
