@@ -27,6 +27,7 @@
 **/glove.6B.zip
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
+notebooks/data/aclImdb.tar.gz
 
 # IPython
 profile_default/
