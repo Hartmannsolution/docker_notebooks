@@ -3,7 +3,6 @@ FROM jupyter/scipy-notebook:latest
 # copy requirements.txt first so this part of the image is only rebuild if the requirements have changed.
 COPY ./requirements.txt /tmp/requirements.txt
 WORKDIR /tmp
-RUN pip install -r requirements.txt
 # RUN conda install -c conda-forge jupyter_contrib_nbextensions jupyter_nbextensions_configurator autopep8
 USER root
 RUN apt-get update \
@@ -32,19 +31,18 @@ RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.26.0/geckod
 # # run GUI apps (week 7 with selenium) (seems to create a jupyter kernel problem that is solved with second command in this line)
 # RUN apt-get install -y python3.7-tk && pip install -U jupyter_console
 
-# install opencv (week 10)
+# install opencv 
 RUN apt-get update && sudo apt-get upgrade -y \
 && apt-get install -y python3-opencv \
 && pip3 install opencv-python
 
+# Biblioteker til brug for tesseract
 RUN apt-get update && apt-get install -y python-dev libxml2-dev libxslt1-dev antiword unrtf poppler-utils pstotext  \
 flac ffmpeg lame libmad0 libsox-fmt-mp3 sox libjpeg-dev swig 
 
 # RUN apt-get update && apt-get install python3-pil tesseract-ocr libtesseract-dev tesseract-ocr-eng tesseract-ocr-script-latn
 RUN apt-get install -y tesseract-ocr
 RUN pip install pytesseract 
-# xvfb # add this for using with xserver (experiments so far has been fruitless)
-
 
 # # For running selenium with xserver
 # RUN pip install pyvirtualdisplay
@@ -86,6 +84,8 @@ ENV PATH="${PATH}:/tmp"
 # # return to the jovyan user
 USER $NB_UID
 WORKDIR $HOME
+
+RUN pip install -r requirements.txt
 # ENV FLASK_APP="flask/flask_app.py"
 # ENV JUPYTER_RUNTIME_DIR="/tmp"
 # # RUN echo "$PWD"

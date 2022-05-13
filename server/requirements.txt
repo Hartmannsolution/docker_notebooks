@@ -5,11 +5,15 @@ openpyxl
 html5lib
 lxml
 dateparser
+pydantic
+
 # SQLAlchemy
 # mysql-connector-python
 # docopt
 wget
 # PyInquirer
+graphviz 
+folium
 
 # itsdangerous==1.1.0
 # Jinja2==2.10.1
