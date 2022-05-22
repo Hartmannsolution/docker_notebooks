@@ -9,7 +9,9 @@ services:
 
       # DISPLAY: unix$DISPLAY # on linux
       # # on windows install XLaunch with: 'choco install vcxsrv' and configure (the installed) XLaunch with check in "Disable access control". Before first time using choco in powershell by admin write: Installer choco: Set-ExecutionPolicy Bypass -Scope Process -Force; ` iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+      
       # on mac     Install the latest XQuartz X11 server and run it Activate the option ‘Allow connections from network clients’ in XQuartz settings Quit & restart XQuartz (to activate the setting). Ensure localhost is allowed X11 forwarding: xhost + 127.0.0.1 Inside the docker image, install pygame and set the display variable: DISPLAY=host.docker.internal:0
+      
       DISPLAY: host.docker.internal:0 
     volumes: 
       - ./notebooks:/home/jovyan
