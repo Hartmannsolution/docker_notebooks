@@ -71,6 +71,8 @@ RUN pip install pytesseract
 # # solve a jupyter notebook problem with kernel dying.
 RUN pip install -U jupyter_console
 
+RUN pip install -r requirements.txt
+
 # # for exercise week 11
 # RUN pip install torch
 # RUN pip install torchvision
@@ -85,7 +87,6 @@ ENV PATH="${PATH}:/tmp"
 USER $NB_UID
 WORKDIR $HOME
 
-RUN pip install -r requirements.txt
 # ENV FLASK_APP="flask/flask_app.py"
 # ENV JUPYTER_RUNTIME_DIR="/tmp"
 # # RUN echo "$PWD"
