@@ -1,7 +1,19 @@
 .devcontainer
 .ipynb_checkpoints
 .vscode
-
+**/notebooks/01-Class Exercise.ipynb
+**/notebooks/02-Class Exercise.ipynb
+**/notebooks/03-Class Exercise.ipynb
+**/notebooks/04-Class Exercise.ipynb
+**/notebooks/05-Class Exercise.ipynb
+**/notebooks/06-Class Exercise.ipynb
+**/notebooks/07-Class Exercise.ipynb
+**/notebooks/08-Class Exercise.ipynb
+**/notebooks/09-Class Exercise.ipynb
+**/notebooks/10-Class Exercise.ipynb
+**/notebooks/11-Class Exercise.ipynb
+**/notebooks/12-Class Exercise.ipynb
+**/notebooks/13-Class Exercise.ipynb
 **/target/
 **/my_notebooks/
 **/my_modules/
@@ -10,6 +22,7 @@
 **/data/imdb_data.tar.gz
 **/data/aclImdb/
 **/data/glove.6B/
+**/data/test/
 # Created by https://www.gitignore.io/api/python,jupyternotebooks,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=python,jupyternotebooks,visualstudiocode
 **/.python_history/

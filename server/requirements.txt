@@ -1,6 +1,7 @@
 Click
 # Flask
-# selenium
+selenium
+webdriver-manager
 openpyxl
 html5lib
 lxml
