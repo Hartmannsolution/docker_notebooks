@@ -2,5 +2,13 @@
     "linux64_geckodriver_0.31_for_101.0": {
         "timestamp": "22/09/2022",
         "binary_path": "/home/jovyan/.wdm/drivers/geckodriver/linux64/0.31/geckodriver"
+    },
+    "linux64_geckodriver_0.31_for_86.0": {
+        "timestamp": "24/09/2022",
+        "binary_path": "/home/jovyan/.wdm/drivers/geckodriver/linux64/0.31/geckodriver"
+    },
+    "linux64_chromedriver_105.0.5195_for_None": {
+        "timestamp": "22/09/2022",
+        "binary_path": "/home/jovyan/.wdm/drivers/chromedriver/linux64/105.0.5195/chromedriver"
     }
 }

@@ -15,6 +15,7 @@
 **/notebooks/12-Class Exercise.ipynb
 **/notebooks/13-Class Exercise.ipynb
 **/target/
+**/__pycache__/
 **/my_notebooks/
 **/my_modules/
 **/python_handin2
@@ -38,8 +39,12 @@
 # notebooks/*[.txt,.png,.jpg,.csv]
 # !notebooks/**/*[.csv,.txt,.png,.jpg,.csv]
 **/glove.6B.zip
-.ipynb_checkpoints
-*/.ipynb_checkpoints/*
+**/notebooks/.npm/
+**/notebooks/.wdm/drivers/chromedriver/
+**/notebooks/all_handins.md
+**/notebooks/modules/selenium_krak copy.py
+**/.ipynb_checkpoints
+**/.ipynb_checkpoints/*
 notebooks/data/aclImdb.tar.gz
 
 # IPython
