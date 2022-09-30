@@ -14,7 +14,9 @@ RUN apt-get update \
         tree \
         firefox \
     && pip install \
-        selenium
+        selenium \
+        webdriver-manager \
+        mkl
 
 # Add latest FireFox
 RUN set -x \
@@ -31,7 +33,8 @@ RUN set -x \
 RUN set -x \
    && curl -sSLO https://github.com/mozilla/geckodriver/releases/download/${GECKODRIVER_VER}/geckodriver-${GECKODRIVER_VER}-linux64.tar.gz \
    && tar zxf geckodriver-*.tar.gz \
-   && mv geckodriver /usr/bin/
+   && mv geckodriver /usr/bin/ \
+   && chmod+ geckodriver
 
 # install pygraphviz to use with networkx drawing graphs (week 9)
 # RUN apt-get install -y python-pygraphviz \
