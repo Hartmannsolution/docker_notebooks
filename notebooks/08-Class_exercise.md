@@ -14,7 +14,7 @@ Hint: Use pandas Series unstack() method to get a dataframe from a multiindex Se
 
 #### Part 2
 8. Make it into a function that can take either company_size or experience_level as arguments.
-9. Change the experience_level column to be numeric using this dictionary: `experience = {'EN':10,'EX':20,'MI':30,'SE':40}`. Hint: [Here](https://sparkbyexamples.com/pandas/pandas-remap-values-in-column-with-a-dictionary-dict/).
+9. Change the experience_level column to be numeric using this dictionary: `experience = {'EN':10, 'MI':20,'SE':30, 'EX':40`. Hint: [Here](https://sparkbyexamples.com/pandas/pandas-remap-values-in-column-with-a-dictionary-dict/).
 10. Use seaborn pairplot to see if there is an approximately linear relationship between experience_level and salary
 11. scatter Plot the 2d feature space of 'experience_level' and 'salary_in_usd
 12. Use sklearn to find the best possible linear relationship between experience_level and salary_in_usd using linear regression.
