@@ -1,18 +1,6 @@
 .devcontainer
 .ipynb_checkpoints
 .vscode
-**/notebooks/01-Class Exercise.ipynb
-**/notebooks/02-Class Exercise.ipynb
-**/notebooks/03-Class Exercise.ipynb
-**/notebooks/04-Class Exercise.ipynb
-**/notebooks/05-Class Exercise.ipynb
-**/notebooks/06-Class Exercise.ipynb
-**/notebooks/08-Class Exercise.ipynb
-**/notebooks/09-Class Exercise.ipynb
-**/notebooks/10-Class Exercise.ipynb
-**/notebooks/11-Class Exercise.ipynb
-**/notebooks/12-Class Exercise.ipynb
-**/notebooks/13-Class Exercise.ipynb
 **/notebooks/.wdm/drivers.json
 **/target/
 **/__pycache__/
