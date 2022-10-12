@@ -1,20 +1,9 @@
 .devcontainer
 .ipynb_checkpoints
 .vscode
-**/notebooks/01-Class Exercise.ipynb
-**/notebooks/02-Class Exercise.ipynb
-**/notebooks/03-Class Exercise.ipynb
-**/notebooks/04-Class Exercise.ipynb
-**/notebooks/05-Class Exercise.ipynb
-**/notebooks/06-Class Exercise.ipynb
-**/notebooks/07-Class Exercise.ipynb
-**/notebooks/08-Class Exercise.ipynb
-**/notebooks/09-Class Exercise.ipynb
-**/notebooks/10-Class Exercise.ipynb
-**/notebooks/11-Class Exercise.ipynb
-**/notebooks/12-Class Exercise.ipynb
-**/notebooks/13-Class Exercise.ipynb
+**/notebooks/.wdm/drivers.json
 **/target/
+**/__pycache__/
 **/my_notebooks/
 **/my_modules/
 **/python_handin2
@@ -38,8 +27,12 @@
 # notebooks/*[.txt,.png,.jpg,.csv]
 # !notebooks/**/*[.csv,.txt,.png,.jpg,.csv]
 **/glove.6B.zip
-.ipynb_checkpoints
-*/.ipynb_checkpoints/*
+**/notebooks/.npm/
+**/notebooks/.wdm/drivers/chromedriver/
+**/notebooks/all_handins.md
+**/notebooks/modules/selenium_krak copy.py
+**/.ipynb_checkpoints
+**/.ipynb_checkpoints/*
 notebooks/data/aclImdb.tar.gz
 
 # IPython

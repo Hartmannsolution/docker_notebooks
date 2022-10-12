@@ -9,9 +9,14 @@ RUN apt-get update \
     && apt-get install -y curl tree firefox
 
 # install gecko-driver for selenium
-#RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.31.0/geckodriver-v0.31.0-linux64.tar.gz \
-#&& tar -xzf geckodriver-v0.31.0-linux64.tar.gz \
-#&& rm geckodriver-v0.31.0-linux64.tar.gz
+RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.31.0/geckodriver-v0.31.0-linux64.tar.gz \
+&& tar -xzf geckodriver-v0.31.0-linux64.tar.gz \
+&& rm geckodriver-v0.31.0-linux64.tar.gz
+
+# install chrome-driver for selenium
+# RUN wget https://chromedriver.storage.googleapis.com/106.0.5249.21/chromedriver_linux64.zip && \
+# && unzip chromedriver_linux64.zip -d /usr/local/bin \
+# && chmod +x /usr/local/bin/chromedriver
 
 
 # install geckodriver  
@@ -34,12 +39,12 @@ RUN apt-get update && sudo apt-get upgrade -y \
 && pip3 install opencv-python
 
 # Biblioteker til brug for tesseract
-RUN apt-get update && apt-get install -y python-dev libxml2-dev libxslt1-dev antiword unrtf poppler-utils pstotext  \
-flac ffmpeg lame libmad0 libsox-fmt-mp3 sox libjpeg-dev swig 
+# RUN apt-get update && apt-get install -y python-dev libxml2-dev libxslt1-dev antiword unrtf poppler-utils pstotext  \
+# flac ffmpeg lame libmad0 libsox-fmt-mp3 sox libjpeg-dev swig 
 
 # RUN apt-get update && apt-get install python3-pil tesseract-ocr libtesseract-dev tesseract-ocr-eng tesseract-ocr-script-latn
-RUN apt-get install -y tesseract-ocr
-RUN pip install pytesseract 
+# RUN apt-get install -y tesseract-ocr
+# RUN pip install pytesseract 
 
 # # For running selenium with xserver
 # RUN pip install pyvirtualdisplay
