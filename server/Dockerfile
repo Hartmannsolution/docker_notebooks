@@ -6,17 +6,21 @@ WORKDIR /tmp
 # RUN conda install -c conda-forge jupyter_contrib_nbextensions jupyter_nbextensions_configurator autopep8
 USER root
 RUN apt-get update \
-    && apt-get install -y curl tree firefox
+    && apt-get install -y curl tree 
+# Install firefox version 61
+# RUN wget https://ftp.mozilla.org/pub/firefox/releases/61.0/linux-x86_64/en-GB/firefox-61.0.tar.bz2 \ 
+# && tar xvf firefox-61.0.tar.bz2 -C /usr/lib \
+# && ln -s /usr/lib/firefox/firefox /usr/bin/firefox \ 
+# && apt-get install libdbus-glib-1-2:amd64 
 
 # install gecko-driver for selenium
-RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.31.0/geckodriver-v0.31.0-linux64.tar.gz \
-&& tar -xzf geckodriver-v0.31.0-linux64.tar.gz \
-&& rm geckodriver-v0.31.0-linux64.tar.gz
+RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.24.0/geckodriver-v0.24.0-linux64.tar.gz \
+&& tar -xzf geckodriver-v0.24.0-linux64.tar.gz -C /usr/local/bin \
+&& chmod +x /usr/local/bin/geckodriver \
+&& rm geckodriver-v0.24.0-linux64.tar.gz
 
 # install chrome-driver for selenium
-# RUN wget https://chromedriver.storage.googleapis.com/106.0.5249.21/chromedriver_linux64.zip && \
-# && unzip chromedriver_linux64.zip -d /usr/local/bin \
-# && chmod +x /usr/local/bin/chromedriver
+# RUN wget https://chromedriver.storage.googleapis.com/106.0.5249.21/chromedriver_linux64.zip && unzip chromedriver_linux64.zip -d /usr/local/bin && chmod +x /usr/local/bin/chromedriver
 
 
 # install geckodriver  

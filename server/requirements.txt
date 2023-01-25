@@ -1,6 +1,6 @@
 Click
 # Flask
-selenium
+selenium==4.1.2
 webdriver-manager
 openpyxl
 html5lib

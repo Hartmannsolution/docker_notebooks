@@ -14,5 +14,17 @@
     "linux64_geckodriver_0.31_for_None": {
         "timestamp": "04/10/2022",
         "binary_path": "/home/jovyan/.wdm/drivers/geckodriver/linux64/0.31/geckodriver"
+    },
+    "linux64_geckodriver_0.32_for_None": {
+        "timestamp": "16/11/2022",
+        "binary_path": "/home/jovyan/.wdm/drivers/geckodriver/linux64/0.32/geckodriver"
+    },
+    "linux64_geckodriver_0.32_for_61.0": {
+        "timestamp": "18/11/2022",
+        "binary_path": "/home/jovyan/.wdm/drivers/geckodriver/linux64/0.32/geckodriver"
+    },
+    "linux64_chromedriver_107.0.5304_for_None": {
+        "timestamp": "18/11/2022",
+        "binary_path": "/home/jovyan/.wdm/drivers/chromedriver/linux64/107.0.5304/chromedriver"
     }
 }
