@@ -61,18 +61,18 @@
 
 - Numpy
 
-## Week 4
+## Week 5
 
 - Pandas
 
-## Week 5
+## Week 6
 
 - Webscraping
 - Regular Exp
 - Selenium
 - Requests
 
-## Week 6
+## Project week 
 
 - Semester Projekt Del 1
 
