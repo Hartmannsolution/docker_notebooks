@@ -1,3 +1,5 @@
+.DS_Store
+.swp
 .devcontainer
 .ipynb_checkpoints
 .vscode
