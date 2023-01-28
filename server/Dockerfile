@@ -1,4 +1,4 @@
-FROM jupyter/scipy-notebook:latest 
+FROM jupyter/scipy-notebook:ubuntu-20.04
 
 # copy requirements.txt first so this part of the image is only rebuild if the requirements have changed.
 COPY ./requirements.txt /tmp/requirements.txt
@@ -8,16 +8,16 @@ USER root
 RUN apt-get update \
     && apt-get install -y curl tree 
 # Install firefox version 61
-# RUN wget https://ftp.mozilla.org/pub/firefox/releases/61.0/linux-x86_64/en-GB/firefox-61.0.tar.bz2 \ 
-# && tar xvf firefox-61.0.tar.bz2 -C /usr/lib \
-# && ln -s /usr/lib/firefox/firefox /usr/bin/firefox \ 
-# && apt-get install libdbus-glib-1-2:amd64 
+RUN wget https://ftp.mozilla.org/pub/firefox/releases/61.0/linux-x86_64/en-GB/firefox-61.0.tar.bz2 \ 
+&& tar xvf firefox-61.0.tar.bz2 -C /usr/lib \
+&& ln -s /usr/lib/firefox/firefox /usr/bin/firefox \ 
+&& apt-get install libdbus-glib-1-2:amd64 
 
 # install gecko-driver for selenium
-RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.24.0/geckodriver-v0.24.0-linux64.tar.gz \
-&& tar -xzf geckodriver-v0.24.0-linux64.tar.gz -C /usr/local/bin \
+RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.30.0/geckodriver-v0.30.0-linux64.tar.gz \
+&& tar -xzf geckodriver-v0.30.0-linux64.tar.gz -C /usr/local/bin \
 && chmod +x /usr/local/bin/geckodriver \
-&& rm geckodriver-v0.24.0-linux64.tar.gz
+&& rm geckodriver-v0.30.0-linux64.tar.gz
 
 # install chrome-driver for selenium
 # RUN wget https://chromedriver.storage.googleapis.com/106.0.5249.21/chromedriver_linux64.zip && unzip chromedriver_linux64.zip -d /usr/local/bin && chmod +x /usr/local/bin/chromedriver
@@ -100,3 +100,4 @@ WORKDIR $HOME
 # # RUN ["flask","run","--host=0.0.0.0"]
 # # RUN ls
 # # RUN ["python","-m","flask_app.py"]
+

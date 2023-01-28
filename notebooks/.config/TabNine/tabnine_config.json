@@ -8,6 +8,7 @@
   "semantic_status": {},
   "enable_telemetry": true,
   "user_understands_that_enabling_tabnine_cloud_sends_code_to_tabnine_servers": true,
+  "deep_completions_work_mode": "LocalOnly",
   "hosted_deep_completions_enabled": "Disabled",
   "tabnine_cloud_host": null,
   "tabnine_cloud_certificate_domain": null,
@@ -41,6 +42,10 @@
   "exclude_file_masks": null,
   "inline_suggestions_mode": null,
   "use_specialized_model_if_available": null,
-  "empty_line_suggestions": null,
-  "snippets_enabled": null
+  "snippets_enabled_v2": null,
+  "inline_suggestions_mode_clients": null,
+  "tabnine_hub_port": null,
+  "manually_selected_model": null,
+  "hybrid_rendering_mode": null,
+  "force_local_hub": false
 }

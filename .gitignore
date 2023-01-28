@@ -3,6 +3,12 @@
 .devcontainer
 .ipynb_checkpoints
 .vscode
+notebooks/.launchpadlib
+notebooks/.ssh
+notebooks/.config/**
+notebooks/.wdm/**
+server/Dockerfile_old
+server/fix-permissions
 **/notebooks/.wdm/drivers.json
 **/target/
 **/__pycache__/
