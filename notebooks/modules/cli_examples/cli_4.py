@@ -1,6 +1,9 @@
 import argparse
 
-def some_function(arg1):
+def some_function1(arg1):
+    pass
+
+def some_function2(arg1):
     pass
 
 if __name__ == '__main__':
@@ -10,6 +13,12 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
     print('URL:', args.url)
+    if args.url == '1':
+        some_function1(args.url)
+    else:
+        some_function2(args.url)
+
     print('Destination:', args.destination)
+
 
     some_function(args.url)
