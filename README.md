@@ -13,7 +13,7 @@ Preliminary Class schedule is shown below (subject to change)
 | 5 | 28-02-2023 | Flow 2 | Intro to Pandas | [Learning objectives](notebooks/learning_objectives.md#week-5) | [ex 5](notebooks/05-Exercise.ipynb) |
 | 6 | 07-03-2023 | Flow 2 | Webscraping, Regular Exp, Selenium and Requests | [Learning objectives](notebooks/learning_objectives.md#week-6) | [ex 6](notebooks/06-Exercise.ipynb) |
 | 7 | 14-03-2023 | Flow 2 | [Semester project part 1](notebooks/semester_project.md) INGEN UNDERVISNING|  |  |
-| 8 | 21-03-2023 | Flow 2 | Feature spaces | [Learning objectives](notebooks/learning_objectives.md#week-7) | [ex 7](notebooks/07-Exercise.ipynb) |  |
+| 8 | 21-03-2023 | Flow 3 | Feature spaces | [Learning objectives](notebooks/learning_objectives.md#week-7) | [ex 7](notebooks/07-Exercise.ipynb) |  |
 | 9 | 28-03-2023 | Flow 3 | Feature engineering and Clustering | [Learning objectives](notebooks/learning_objectives.md) | [ex 8](notebooks/08-Exercise.ipynb) |  |
 | 10 | 04-04-2023 | **Påskeferie** |  |  |  |
 | 11 | 11-04-2023 | Flow 3 | Neural Networks and classification of images | [Læringsmål](notebooks/learning_objectives.md) | [ex 9](notebooks/09-Exercise.ipynb) |
