@@ -136,24 +136,57 @@
 
 - Semester Projekt Del 1
 
-## Week 7
-
-- Feature spaces
-
 ## Week 8
+### Feature spaces
+1. Define what a feature space is and why it is important in data science.
+2. Show how to represent data in a feature space.
+3. Identify different types of feature spaces, including numerical, categorical, and text-based.
+4. Show how to normalize data in a feature space.
+5. Show how to deal with missing data in a feature space.
+6. Show how to perform feature engineering to create new features.
+7. Understand the concept of feature scaling and its importance in machine learning.
+8. Explain the difference between linear and non-linear feature spaces.
+9. Understand the concept of dimensionality reduction and how it can be used to simplify feature spaces.
+10. Show how to use feature weighting techniques to assign different weights to features based on their importance.
 
-- Feature engineering
-- Clustering
+### Linear algebra
+1. Define what linear algebra is and why it is important in mathematics and data science.
+2. Explain the difference between vectors and scalars, and how they can be used to represent data in linear algebra.
+3. Explain the concept of matrix multiplication and how it can be used to combine matrices and perform transformations.
+4. Understand how to use linear algebra to solve optimization problems, such as finding the minimum or maximum of a function.
+5. Understand the concept of linear independence and linear dependence, and how they can be used to study vector spaces and solve systems of equations.
+
+### Linear regression
+1. Define what linear regression is and how it is used to model the relationship between a dependent variable and one or more independent variables.
+2. Understand the assumptions of linear regression, such as linearity, independence and normality.
+3. Explain the difference between simple linear regression and multiple linear regression, and when each is appropriate to use.
+4. Explain how to handle categorical variables in linear regression using dummy variables or other encoding schemes.
+5.  Explain how to handle outliers and influential points in linear regression using robust regression or other methods.
 
 ## Week 9
+### Feature engineering
+
+### Clustering
+1. Define what clustering is and why it is important in data science.
+2. Understand the difference between supervised and unsupervised learning, and how clustering is an example of unsupervised learning.
+3. Explain the concept of distance metrics and how they can be used to measure the similarity or dissimilarity between data points.
+4. Explain the concept of k-means clustering and how it works to find clusters of data points.
+5. Understand how to choose the optimal number of clusters in k-means clustering using techniques such as the elbow method or silhouette score.
+6. Explain how to handle categorical variables in clustering using dummy variables or other encoding schemes.
+7. Understand how to use density-based clustering techniques, such as DBSCAN and OPTICS, to identify clusters of arbitrary shape and size.
+8. Explain the concept of cluster validity and how it can be used to evaluate the quality of the clusters.
+9. Understand how to use dimensionality reduction techniques, such as principal component analysis (PCA), to reduce the dimensionality of the data before clustering.
+10. Understand how to use clustering in anomaly detection to identify outliers and unusual patterns in the data.
+
+## Week 10
 
 - Neural Networks
 - Classification of images
 
-## Week 10
+## Week 11
 
 - Working with text
 
-## Week 11
+## Week 12
 
 - Working with images OpenCV
