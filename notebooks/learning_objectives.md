@@ -169,19 +169,46 @@
 ### Clustering
 1. Define what clustering is and why it is important in data science.
 2. Understand the difference between supervised and unsupervised learning, and how clustering is an example of unsupervised learning.
-3. Explain the concept of distance metrics and how they can be used to measure the similarity or dissimilarity between data points.
+3. Explain the concept of distance metrics (Euclidean and Manhattan) and how they can be used to measure the similarity or dissimilarity between data points.
 4. Explain the concept of k-means clustering and how it works to find clusters of data points.
 5. Understand how to choose the optimal number of clusters in k-means clustering using techniques such as the elbow method or silhouette score.
-6. Explain how to handle categorical variables in clustering using dummy variables or other encoding schemes.
-7. Understand how to use density-based clustering techniques, such as DBSCAN and OPTICS, to identify clusters of arbitrary shape and size.
-8. Explain the concept of cluster validity and how it can be used to evaluate the quality of the clusters.
-9. Understand how to use dimensionality reduction techniques, such as principal component analysis (PCA), to reduce the dimensionality of the data before clustering.
-10. Understand how to use clustering in anomaly detection to identify outliers and unusual patterns in the data.
+6. Demonstrate how to use k-means clustering to cluster data points into groups.
+7. Demonstrate how to use mean shift clustering to cluster data points into groups.
+8. Demonstrate real world applications of clustering, such as customer segmentation and anomaly detection.
+
+6. Explain how to handle categorical variables in clustering [like this article describes](https://towardsdatascience.com/clustering-on-numerical-and-categorical-features-6e0ebcf1cbad) 
+7. Demo how to make categorical variables numerical in clustering using one-hot encoding or other methods.
+8. Understand how to use density-based clustering techniques, such as DBSCAN and OPTICS, to identify clusters of arbitrary shape and size.
+9. Demonstrate how to make dummy data to test out clustering algorithms.
+10. Explain the concept of cluster validity and how it can be used to evaluate the quality of the clusters.
+11. Understand how to use dimensionality reduction techniques, such as principal component analysis (PCA), to reduce the dimensionality of the data before clustering.
+12. Understand how to use clustering in anomaly detection to identify outliers and unusual patterns in the data.
 
 ## Week 10
 
-- Neural Networks
-- Classification of images
+### Neural Networks
+1. Define what a neural network is and how it is used to model complex relationships between data.
+2. Explain the difference between supervised and unsupervised learning, and how neural networks are an example of supervised learning.
+3. Explain the concept of artificial neurons and how they can be used to model the human brain.
+4. Demonstrate the concept of activation functions and how they can be used to introduce non-linearity into neural networks.
+5. Explain the concept of backpropagation and how it can be used to train neural networks.
+6. Explain the concept of gradient descent and how it can be used to train neural networks.
+7. Explain the concept of regularization and how it can be used to prevent overfitting in neural networks.
+8. Demonstrate the concept of deep learning and how it can be used to train neural networks with many layers.
+9. Demonstrate the concept of transfer learning and how it can be used to train neural networks on new data using pre-trained models.
+10. Demonstrate different types of neural network layers, such as dense, convolutional, and recurrent layers.
+
+### Classification of images
+1. Define what image classification is and how it is used to classify images into different categories.
+2. Explain the difference between supervised and unsupervised learning, and how image classification is an example of supervised learning.
+3. Explain the concept of convolutional neural networks and how they can be used to train neural networks on image data.
+4. Demonstrate how to use convolutional neural networks to classify images into different categories.
+5. Demonstrate how to use transfer learning to train convolutional neural networks on new data using pre-trained models.
+6. Demonstrate different techniques for improving the performance of convolutional neural networks, such as data augmentation and dropout.
+7. Demonstrate use of different types of convolutional neural networks, such as AlexNet, VGG, ResNet, and Inception.
+8. Demonstrate use of different types of image classification datasets, such as ImageNet and CIFAR-10.
+9. Demonstrate use of different activation functions in convolutional neural networks, such as ReLU, sigmoid, and softmax.
+10. Demonstrate use of different types of pooling layers in convolutional neural networks, such as max pooling and average pooling.
 
 ## Week 11
 
