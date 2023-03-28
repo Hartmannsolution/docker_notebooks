@@ -165,6 +165,15 @@
 
 ## Week 9
 ### Feature engineering
+1. Define what feature engineering is and why it is important in data science.
+2. Understand the difference between feature selection and feature extraction, and when each is appropriate to use.
+3. Demonstrate the concept of feature weighting and how it can be used to assign different weights to features based on their importance.
+4. Explain the concept of feature hashing and how it can be used to reduce the dimensionality of a feature space.
+5. Demonstrate the concept of feature scaling and how it can be used to normalize data in a feature space.
+6. Explain the concept of dimensionality reduction and how it can be used to simplify feature spaces.
+7. Explain the concept of feature selection and how it can be used to reduce the dimensionality of a feature space.
+8. Demonstrate the concept of feature extraction and how it can be used to create new features from existing ones.
+
 
 ### Clustering
 1. Define what clustering is and why it is important in data science.
