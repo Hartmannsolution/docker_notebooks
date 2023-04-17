@@ -134,7 +134,7 @@
 
 ## Project week 
 
-- Semester Projekt Del 1
+- Semester Project part 1
 
 ## Week 8
 ### Feature spaces
@@ -221,9 +221,27 @@
 
 ## Week 11
 ### Working with images OpenCV
-
-
+1. Understand the basics of image processing, including image representation and manipulation.
+2. Learn how to load, display, and save images using OpenCV.
+3. Master various image filtering techniques, such as smoothing, sharpening, and edge detection.
+4. Implement morphological image processing techniques such as dilation, erosion, and opening/closing.
+5. Use OpenCV to perform object detection and recognition.
+6. Learn how to perform image segmentation using OpenCV.
+7. Implement different image thresholding techniques to separate image regions based on intensity or color.
+8. Understand the basics of image transformation, including scaling, rotation, and perspective transformations.
+9. Use OpenCV to perform basic image restoration and noise reduction.
+10. Learn how to use OpenCV with popular deep learning frameworks such as TensorFlow and PyTorch.
+11. Apply image processing techniques to real-world applications such as medical imaging, surveillance, and robotics.
 
 ## Week 12
 ### Working with text
-
+1. Understand the basics of NLP, including text preprocessing, tokenization, and normalization.
+2. Learn how to extract key features from text data, such as n-grams, bag of words, and TF-IDF.
+3. Learn how to use NLP libraries such as NLTK and spaCy for text processing and analysis.
+4. Understand the principles behind named entity recognition and relation extraction.
+5. Implement different techniques for text clustering and topic modeling.
+6. Learn how to use deep learning-based architectures, such as Recurrent Neural Networks (RNNs) and Transformers, for text processing and analysis.
+7. Understand the principles of sentiment analysis and emotion detection.
+8. Learn how to use pre-trained language models, such as BERT and GPT, for various NLP tasks.
+9. Learn how to use NLP for information retrieval and search engine optimization.
+10. Apply NLP techniques to real-world applications such as chatbots, sentiment analysis in social media, and machine translation.
