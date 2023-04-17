@@ -194,8 +194,8 @@
 12. Understand how to use clustering in anomaly detection to identify outliers and unusual patterns in the data.
 
 ## Week 10
-
 ### Neural Networks
+
 1. Define what a neural network is and how it is used to model complex relationships between data.
 2. Explain the difference between supervised and unsupervised learning, and how neural networks are an example of supervised learning.
 3. Explain the concept of artificial neurons and how they can be used to model the human brain.
@@ -220,9 +220,10 @@
 10. Demonstrate use of different types of pooling layers in convolutional neural networks, such as max pooling and average pooling.
 
 ## Week 11
+### Working with images OpenCV
 
-- Working with text
+
 
 ## Week 12
+### Working with text
 
-- Working with images OpenCV

@@ -17,8 +17,8 @@ Preliminary Class schedule is shown below (subject to change)
 | 9 | 28-03-2023 | Flow 3 | Feature engineering and Clustering | [Learning objectives](notebooks/learning_objectives.md) | [ex 8](notebooks/08-Exercise.ipynb) |  |
 | 10 | 04-04-2023 | **Påskeferie** |  |  |  |
 | 11 | 11-04-2023 | Flow 3 | Neural Networks and classification of images | [Læringsmål](notebooks/learning_objectives.md) | [ex 9](notebooks/09-Exercise.ipynb) |
-| 12 | 18-04-2023 | Flow 3 | Working with text | [Learning objectives](notebooks/learning_objectives.md) | [ex 10](notebooks/10-Exercise.ipynb) |
-| 13 | 25-04-2023 | Flow 3 | Working with images OpenCV | [Learning objectives](notebooks/learning_objectives.md) | [ex 11](notebooks/11-Exercise.ipynb) |
+| 12 | 18-04-2023 | Flow 3 | Working with images OpenCV | [Learning objectives](notebooks/learning_objectives.md) | [ex 11](notebooks/11-Exercise.ipynb) |
+| 13 | 25-04-2023 | Flow 3 | Working with text | [Learning objectives](notebooks/learning_objectives.md) | [ex 10](notebooks/10-Exercise.ipynb) |
 | 14 | 02-05-2023 | Flow 4 | Semester project |  |  |
 | 15 | 09-05-2023 | Flow 4 | Semester project |  |  |
 | 16 | 16-05-2023 | Flow 4 | Semester project |  |  |
