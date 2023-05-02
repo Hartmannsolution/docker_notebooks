@@ -23,7 +23,8 @@ Preliminary Class schedule is shown below (subject to change)
 | 15 | 09-05-2023 | Flow 4 | Semester project |  |  |
 | 16 | 16-05-2023 | Flow 4 | Semester project |  |  |
 | 17 | 23-05-2023 | Flow 4 | Eksamensforberedelse |  |  |
-| 18 | 30-05-2023 | Hand-in Semester projekt |  |  |
+| 18 | 31-05-2023 | Hand-in Semester projekt |  |  |
+|  | (06-07)-06-2023 | Eksamen |  |  |
 
 [Studypoint assignment sheet](https://docs.google.com/spreadsheets/d/1u9ZYEgQYjRtjDrdCGXljOBA-NWX55ytnhuXL6YP2jUs/edit?usp=sharing)
 
