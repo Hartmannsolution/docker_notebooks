@@ -204,3 +204,4 @@ build.log
 **/.bash_history
 **/.bashrc
 **/.cache
+**/.dotnet/
